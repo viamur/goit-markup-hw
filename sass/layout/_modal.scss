@@ -1,0 +1,54 @@
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1);
+
+  width: 528px;
+  min-height: 581px;
+  padding: 40px;
+
+  background: #ffffff;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+
+  transition: transform var(--animation);
+
+  &__title {
+    margin-bottom: 12px;
+
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.15;
+    text-align: center;
+    color: var(--title-color);
+  }
+  &__icon--close {
+    transition: fill var(--animation);
+    fill: var(--title-color);
+  }
+}
+// кнопка закрыть
+.modal__btn {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+
+  width: 30px;
+  height: 30px;
+
+  cursor: pointer;
+  background-color: transparent;
+  border-radius: 50%;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+
+  &:focus .modal__icon--close,
+  &:hover .modal__icon--close {
+    fill: var(--active-color);
+  }
+}
+// применяется при видимости модального окна
+.is-hidden .modal {
+  transform: translate(-50%, -50%) scale(1.2);
+}
