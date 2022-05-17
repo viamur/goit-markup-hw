@@ -1,38 +1,48 @@
 /* БЛОК КЛИЕНТЫ */
 .client-list {
-  display: flex;
-  justify-content: center;
+  --card-gap: 30px;
+  --card-item: 2;
+  @include mq(tab) {
+    --card-item: 3;
+  }
+  @include mq(desk) {
+    --card-item: 6;
+  }
 
   &__icon {
     fill: currentColor;
   }
 }
 .client-list__item {
-  width: 170px;
-  height: 92px;
+  border: 1px solid var(--icon-color);
+  // color: var(--icon-color);
+  border-radius: 4px;
 
-  &:not(:last-child) {
-    margin-right: 30px;
+  transition: border-color var(--animation);
+
+  &:hover,
+  &:focus {
+    // color: var(--active-color);
+    border-color: var(--active-color);
   }
 }
-
 .client-list__link {
   display: flex;
   justify-content: center;
   align-items: center;
 
+  padding-top: 16px;
+  padding-bottom: 16px;
+
   width: 100%;
   height: 100%;
 
-  border: 1px solid var(--icon-color);
   color: var(--icon-color);
-  border-radius: 4px;
 
-  transition: border-color var(--animation), color var(--animation);
+  transition: color var(--animation);
 
   &:hover,
   &:focus {
     color: var(--active-color);
-    border-color: var(--active-color);
   }
 }

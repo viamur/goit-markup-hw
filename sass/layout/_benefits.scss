@@ -1,6 +1,11 @@
 /* Преймущества блок */
 .benefits {
-  // display: flex;
+  @include mq(tab) {
+    --card-item: 2;
+  }
+  @include mq(desk) {
+    --card-item: 4;
+  }
 
   &__icon {
     display: flex;
@@ -28,12 +33,5 @@
   &__text {
     font-size: 14px;
     line-height: 1.7;
-  }
-}
-.benefits__item {
-  flex-basis: calc((100% - 90px) / 4);
-
-  &:not(:last-child) {
-    margin-right: 30px;
   }
 }

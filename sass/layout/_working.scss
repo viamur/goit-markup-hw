@@ -1,6 +1,12 @@
 /* ВТОРОЙ БЛОК */
 
 .working {
+  display: none;
+
+  @include mq(desk) {
+    display: block;
+  }
+
   padding-top: 0;
 
   &__list {

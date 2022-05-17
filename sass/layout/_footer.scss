@@ -6,10 +6,39 @@
 
   &__flex {
     display: flex;
-    align-items: baseline;
+    flex-direction: column;
+    align-items: center;
+    @include mq(desk) {
+      flex-direction: row;
+      align-items: baseline;
+    }
+  }
+  &__oneblcok {
+    @include mq(no-desk) {
+      margin-bottom: 60px;
+    }
+
+    @include mq(tab) {
+      display: flex;
+      align-items: baseline;
+    }
+  }
+  &__addressandlogo {
+    @include mq(mob-only) {
+      margin-bottom: 60px;
+    }
+    @include mq(tab) {
+      margin-right: 165px;
+    }
+    @include mq(desk) {
+      margin-right: 70px;
+    }
   }
   &__logo {
     color: inherit;
+    @include mq(no-desk) {
+      text-align: center;
+    }
   }
   &__title {
     margin-bottom: 20px;
@@ -20,17 +49,29 @@
     text-transform: uppercase;
 
     color: var(--white-color);
+
+    @include mq(no-desk) {
+      text-align: center;
+    }
   }
   &__join {
-    margin-left: 80px;
+    // margin-left: 80px;
   }
 }
 
 .address {
   margin-top: 20px;
 
+  &__item {
+    @include mq(no-desk) {
+      text-align: center;
+    }
+  }
   &__item:not(:last-child) {
-    margin-bottom: 9px;
+    margin-bottom: 8px;
+    @include mq(desk) {
+      margin-bottom: 9px;
+    }
   }
   &__link {
     font-size: 14px;

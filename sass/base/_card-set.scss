@@ -1,0 +1,16 @@
+// желательно в variables переменные, их можно потом перееиспользовать для планшетов десктопов и телефонов
+
+// применяется к списку ul
+.card-set {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: calc(var(--card-gap) * -1);
+  margin-top: calc(var(--card-gap) * -1);
+}
+
+// применяется к li
+.card-item {
+  margin-left: var(--card-gap);
+  margin-top: var(--card-gap);
+  flex-basis: calc(100% / var(--card-item) - var(--card-gap));
+}
