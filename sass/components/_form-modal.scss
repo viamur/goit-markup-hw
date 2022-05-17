@@ -9,12 +9,12 @@
     margin-bottom: 10px;
   }
   &__title {
-    // margin-bottom: 4px;
+    margin-bottom: 4px;
 
-    // font-size: 12px;
-    // line-height: 1.16;
-    // letter-spacing: 0.01em;
-    // color: var(--text-color);
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.01em;
+    color: var(--text-color);
   }
   &__block {
     position: relative;
@@ -32,13 +32,25 @@
   }
   &__text {
     display: flex;
+    flex-direction: column;
+    margin-left: 20px;
 
-    font-size: 14px;
-    line-height: 1.71;
+    font-size: 12px;
+    line-height: 1.16;
+    text-align: center;
+    letter-spacing: 0.03em;
+
     color: var(--text-color);
+
+    @include mq(mob) {
+      flex-direction: row;
+    }
+    @include mq(desk) {
+      font-size: 14px;
+      line-height: 1.71;
+    }
   }
   &__link {
-    margin-left: 2pt;
     text-decoration-line: underline;
     color: var(--active-color);
   }
@@ -99,11 +111,6 @@
 }
 
 .modal-form__icon--box {
-  position: absolute;
-  top: 3px;
-  left: 3px;
-  width: 16px;
-  height: 15px;
   border-radius: 2px;
 
   .modal-form__checkbox:checked + & {
@@ -111,10 +118,15 @@
     background-color: var(--active-color);
   }
 }
-.modal-form__icon--check {
+.modal-form__icon--check,
+.modal-form__icon--box {
   position: absolute;
-  top: 3px;
+  top: -2px;
   left: 3px;
   width: 16px;
   height: 15px;
+
+  @include mq(desk) {
+    top: 3px;
+  }
 }

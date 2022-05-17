@@ -209,6 +209,14 @@ img {
   margin-bottom: 10px;
 }
 
+.modal-form__title {
+  margin-bottom: 4px;
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
+  color: var(--text-color);
+}
+
 .modal-form__block {
   position: relative;
 }
@@ -227,13 +235,29 @@ img {
 
 .modal-form__text {
   display: flex;
-  font-size: 14px;
-  line-height: 1.71;
+  flex-direction: column;
+  margin-left: 20px;
+  font-size: 12px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
   color: var(--text-color);
 }
 
+@media (min-width: 480px) {
+  .modal-form__text {
+    flex-direction: row;
+  }
+}
+
+@media (min-width: 1200px) {
+  .modal-form__text {
+    font-size: 14px;
+    line-height: 1.71;
+  }
+}
+
 .modal-form__link {
-  margin-left: 2pt;
   text-decoration-line: underline;
   color: var(--active-color);
 }
@@ -287,11 +311,6 @@ img {
 }
 
 .modal-form__icon--box {
-  position: absolute;
-  top: 3px;
-  left: 3px;
-  width: 16px;
-  height: 15px;
   border-radius: 2px;
 }
 
@@ -300,12 +319,20 @@ img {
   background-color: var(--active-color);
 }
 
-.modal-form__icon--check {
+.modal-form__icon--check,
+.modal-form__icon--box {
   position: absolute;
-  top: 3px;
+  top: -2px;
   left: 3px;
   width: 16px;
   height: 15px;
+}
+
+@media (min-width: 1200px) {
+  .modal-form__icon--check,
+  .modal-form__icon--box {
+    top: 3px;
+  }
 }
 
 /* Лого */
@@ -859,11 +886,11 @@ img {
 
 .modal {
   position: absolute;
-  top: 50%;
+  top: 0;
   left: 50%;
-  transform: translate(-50%, -50%) scale(1);
-  width: 528px;
-  min-height: 581px;
+  transform: translate(-50%) scale(1);
+  max-width: 450px;
+  width: 100%;
   padding: 40px;
   background: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -871,13 +898,34 @@ img {
   transition: transform var(--animation);
 }
 
+@media (min-width: 768px) {
+  .modal {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+@media (min-width: 1200px) {
+  .modal {
+    max-width: 528px;
+    min-height: 581px;
+  }
+}
+
 .modal__title {
   margin-bottom: 12px;
   font-weight: 700;
   font-size: 20px;
-  line-height: 1.15;
+  line-height: 1.5;
   text-align: center;
   color: var(--title-color);
+}
+
+@media (min-width: 1200px) {
+  .modal__title {
+    line-height: 1.15;
+  }
 }
 
 .modal__icon--close {
@@ -886,6 +934,9 @@ img {
 }
 
 .modal__btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   position: absolute;
   top: 8px;
   right: 8px;
