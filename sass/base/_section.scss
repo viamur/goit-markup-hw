@@ -1,13 +1,22 @@
 .section {
-  padding: 94px 0;
-  &__title {
-    margin-bottom: 50px;
+  padding: 60px 0;
 
-    font-size: 36px;
+  @include mq(desk) {
+    padding: 94px 0;
+  }
+  &__title {
+    margin-bottom: 30px;
+
+    font-size: 28px;
     font-weight: 700;
     line-height: 1.16;
 
     text-align: center;
     color: var(--title-color);
+
+    @include mq(desk) {
+      margin-bottom: 50px;
+      font-size: 36px;
+    }
   }
 }

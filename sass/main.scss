@@ -1,3 +1,7 @@
+@import './utils/hidden';
+@import './utils/variables';
+@import './utils/mixin';
+
 @import './base/common';
 @import './base/container';
 @import './base/reset';
@@ -21,6 +25,3 @@
 @import './layout/modal';
 @import './layout/product-card';
 @import './layout/working';
-
-@import './utils/hidden';
-@import './utils/variables';
