@@ -1,10 +1,20 @@
 .filter-list {
   display: flex;
-  justify-content: center;
-  margin-bottom: 50px;
+  flex-wrap: wrap;
 
-  &__item:not(:last-child) {
+  margin-bottom: 25px;
+  margin-right: -8px;
+
+  @include mq(tab) {
+    justify-content: center;
+    margin-bottom: 15px;
+  }
+  @include mq(desk) {
+    margin-bottom: 35px;
+  }
+  &__item {
     margin-right: 8px;
+    margin-bottom: 15px;
   }
 }
 

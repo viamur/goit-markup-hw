@@ -1,19 +1,38 @@
 .header {
   border-bottom: 1px solid #ececec;
-
+  padding-top: 10px;
+  padding-bottom: 10px;
+  @include mq(tab) {
+    padding: 0;
+  }
   &__flex,
   &__nav {
     display: flex;
     align-items: center;
+    justify-content: space-between;
+    height: 100%;
   }
 }
 /* Почта и номер телефона */
 .contacts {
-  display: flex;
+  display: none;
   margin-left: auto;
 
+  @include mq(tab) {
+    display: block;
+  }
+  @include mq(desk) {
+    display: flex;
+  }
+  &__item:first-child {
+    @include mq(tab-only) {
+      margin-bottom: 10px;
+    }
+  }
   &__item:not(:last-child) {
-    margin-right: 50px;
+    @include mq(desk) {
+      margin-right: 50px;
+    }
   }
   &__icon {
     fill: currentColor;

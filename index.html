@@ -18,7 +18,7 @@
 
 <body>
     <!-- Шапка -->
-    <!-- <header class="header">
+    <header class="header">
         <div class="container header__flex">
             <nav class="header__nav">
                 <a href="./index.html" class="logo"><span class="logo__part">Web</span>Studio</a>
@@ -27,11 +27,8 @@
                             class="site-nav__link site-nav__link--active">Студия</a></li>
                     <li class="site-nav__item"><a href="./portfolio.html" class="site-nav__link">Портфолио</a></li>
                     <li class="site-nav__item"><a href="" class="site-nav__link">Контакты </a></li>
-                </ul> -->
-    <!-- <button type="button" class="menu-button" aria-expanded="false" aria-controls="menu-container"
-                    data-menu-button></button>
-                <div class="menu-container" id="menu-container" data-menu></div> -->
-    <!-- </nav>
+                </ul>
+            </nav>
             <ul class="contacts">
                 <li class="contacts__item">
                     <a href="mailto:info@devstudio.com" class="contacts__link">
@@ -50,8 +47,33 @@
                     </a>
                 </li>
             </ul>
+            <button type="button" class="burger-btn" aria-expanded="false" aria-controls="menu-container"
+                data-menu-button>
+                <svg width="40" height="40" class="burger-btn__icon">
+                    <use class="burger-btn__open" href="./images/icons.svg#icon-menu" />
+                    <use class="burger-btn__close" href="./images/icons.svg#icon-close_mob" />
+                </svg>
+            </button>
+            <div class="mob-menu" data-menu id="menu-container">
+                <ul class="mob-nav">
+                    <li class="mob-nav__item"><a href="./index.html"
+                            class="mob-nav__link  mob-nav__link--active">Студия</a></li>
+                    <li class="mob-nav__item"><a href="./portfolio.html" class="mob-nav__link">Портфолио</a></li>
+                    <li class="mob-nav__item"><a href="" class="mob-nav__link">Контакты</a></li>
+                </ul>
+                <ul class="mob-contact">
+                    <li class="mob-contact__item"><a href="" class="mob-contact__link">+38 096 111 11 11</a></li>
+                    <li class="mob-contact__item"><a href="" class="mob-contact__link">info@devstudio.com</a></li>
+                </ul>
+                <ul class="mob-soc">
+                    <li class="mob-soc__item"><a href="" class="mob-soc__link">Instagram</a></li>
+                    <li class="mob-soc__item"><a href="" class="mob-soc__link">Twitter</a></li>
+                    <li class="mob-soc__item"><a href="" class="mob-soc__link">Facebook</a></li>
+                    <li class="mob-soc__item"><a href="" class="mob-soc__link">LinkedIn</a></li>
+                </ul>
+            </div>
         </div>
-    </header> -->
+    </header>
     <!-- Основной контент -->
     <main>
 
@@ -512,7 +534,7 @@
                             <use href="./images/icons.svg#icon-check-2" />
                         </svg>
                     </span>
-                    <span class="modal-form__text">Соглашаюсь с рассылкой и принимаю &nbsp; <a href=""
+                    <span class="modal-form__text">Соглашаюсь с рассылкой и принимаю <a href=""
                             class="modal-form__link">Условия договора</a></span>
                 </label>
                 <button type="submit" class="button">Отправить</button>

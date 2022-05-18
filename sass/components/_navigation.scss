@@ -1,8 +1,11 @@
 /* Главное меню */
 .site-nav {
-  display: flex;
+  display: none;
   margin-left: 93px;
 
+  @include mq(tab) {
+    display: flex;
+  }
   &__item:not(:last-child) {
     margin-right: 50px;
   }

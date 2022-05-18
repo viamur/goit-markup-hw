@@ -31,8 +31,8 @@
     margin-bottom: 30px;
   }
   &__text {
-    display: flex;
-    flex-direction: column;
+    // display: flex;
+    // flex-direction: column;
     margin-left: 20px;
 
     font-size: 12px;
@@ -51,8 +51,10 @@
     }
   }
   &__link {
+    margin-left: 4px;
     text-decoration-line: underline;
     color: var(--active-color);
+    display: inline-block;
   }
 }
 

@@ -47,6 +47,31 @@
                     </a>
                 </li>
             </ul>
+            <button type="button" class="burger-btn" aria-expanded="false" aria-controls="menu-container"
+                data-menu-button>
+                <svg width="40" height="40" class="burger-btn__icon">
+                    <use class="burger-btn__open" href="./images/icons.svg#icon-menu" />
+                    <use class="burger-btn__close" href="./images/icons.svg#icon-close_mob" />
+                </svg>
+            </button>
+            <div class="mob-menu" data-menu id="menu-container">
+                <ul class="mob-nav">
+                    <li class="mob-nav__item"><a href="./index.html" class="mob-nav__link">Студия</a></li>
+                    <li class="mob-nav__item"><a href="./portfolio.html"
+                            class="mob-nav__link mob-nav__link--active">Портфолио</a></li>
+                    <li class="mob-nav__item"><a href="" class="mob-nav__link">Контакты</a></li>
+                </ul>
+                <ul class="mob-contact">
+                    <li class="mob-contact__item"><a href="" class="mob-contact__link">+38 096 111 11 11</a></li>
+                    <li class="mob-contact__item"><a href="" class="mob-contact__link">info@devstudio.com</a></li>
+                </ul>
+                <ul class="mob-soc">
+                    <li class="mob-soc__item"><a href="" class="mob-soc__link">Instagram</a></li>
+                    <li class="mob-soc__item"><a href="" class="mob-soc__link">Twitter</a></li>
+                    <li class="mob-soc__item"><a href="" class="mob-soc__link">Facebook</a></li>
+                    <li class="mob-soc__item"><a href="" class="mob-soc__link">LinkedIn</a></li>
+                </ul>
+            </div>
         </div>
     </header>
 
@@ -70,8 +95,18 @@
                     <li class="card-list__item">
                         <a href="" class="card-list__link">
                             <div class="card-list__img">
-                                <img src="./images/img1.jpg" alt="экран монитора с веб-страницей" width="370"
-                                    height="294">
+                                <img srcset="
+                                                        ./images/card/354-card1.jpg 354w, 
+                                                        ./images/card/354-card1@2x.jpg 708w,
+                                                        ./images/card/370-card1.jpg 370w, 
+                                                        ./images/card/370-card1@2x.jpg 740w,
+                                                        ./images/card/450-card1.jpg 450w, 
+                                                        ./images/card/450-card1@2x.jpg 900w"
+                                    sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (max-width: 767px) 450px"
+                                    src="./images/card/354-card1.jpg" alt="экран монитора с веб-страницей"
+                                    class="card-list__img--img">
+                                <!-- <img src="./images/img1.jpg" alt="экран монитора с веб-страницей" width="370"
+                                    height="294"> -->
                                 <p class="card-list__text">Ресурс предлагает комплексные предложения с разным уровнем
                                     функционала
                                     и
@@ -88,8 +123,18 @@
                     <li class="card-list__item">
                         <a href="" class="card-list__link">
                             <div class="card-list__img">
-                                <img src="./images/img2.jpg" alt="постер с изображением двух баскетболистов" width="370"
-                                    height="294">
+                                <img srcset="
+                                                                                        ./images/card/354-card2.jpg 354w, 
+                                                                                        ./images/card/354-card2@2x.jpg 708w,
+                                                                                        ./images/card/370-card2.jpg 370w, 
+                                                                                        ./images/card/370-card2@2x.jpg 740w,
+                                                                                        ./images/card/450-card2.jpg 450w, 
+                                                                                        ./images/card/450-card2@2x.jpg 900w"
+                                    sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (max-width: 767px) 450px"
+                                    src="./images/card/354-card2.jpg" alt="постер с изображением двух баскетболистов"
+                                    class="card-list__img--img">
+                                <!-- <img src="./images/img2.jpg" alt="постер с изображением двух баскетболистов" width="370"
+                                    height="294"> -->
                                 <p class="card-list__text">Ресурс предлагает комплексные предложения с разным уровнем
                                     функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения
                                     о компании или частном лице.</p>
@@ -103,7 +148,17 @@
                     <li class="card-list__item">
                         <a href="" class="card-list__link">
                             <div class="card-list__img">
-                                <img src="./images/img3.jpg" alt="логотип ресторана" width="370" height="294">
+                                <img srcset="
+                                                                                        ./images/card/354-card3.jpg 354w, 
+                                                                                        ./images/card/354-card3@2x.jpg 708w,
+                                                                                        ./images/card/370-card3.jpg 370w, 
+                                                                                        ./images/card/370-card3@2x.jpg 740w,
+                                                                                        ./images/card/450-card3.jpg 450w, 
+                                                                                        ./images/card/450-card3@2x.jpg 900w"
+                                    sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (max-width: 767px) 450px"
+                                    src="./images/card/354-card3.jpg" alt="логотип ресторана"
+                                    class="card-list__img--img">
+                                <!-- <img src="./images/img3.jpg" alt="логотип ресторана" width="370" height="294"> -->
                                 <p class="card-list__text">Ресурс предлагает комплексные предложения с разным уровнем
                                     функционала и сервисов. Все это позволит
                                     посетителю получить исчерпывающие сведения о компании или частном лице.</p>
@@ -117,7 +172,16 @@
                     <li class="card-list__item">
                         <a href="" class="card-list__link">
                             <div class="card-list__img">
-                                <img src="./images/img4.jpg" alt="наушники" width="370" height="294">
+                                <img srcset="
+                                                                                        ./images/card/354-card4.jpg 354w, 
+                                                                                        ./images/card/354-card4@2x.jpg 708w,
+                                                                                        ./images/card/370-card4.jpg 370w, 
+                                                                                        ./images/card/370-card4@2x.jpg 740w,
+                                                                                        ./images/card/450-card4.jpg 450w, 
+                                                                                        ./images/card/450-card4@2x.jpg 900w"
+                                    sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (max-width: 767px) 450px"
+                                    src="./images/card/354-card4.jpg" alt="наушники" class="card-list__img--img">
+                                <!-- <img src="./images/img4.jpg" alt="наушники" width="370" height="294"> -->
                                 <p class="card-list__text">Ресурс предлагает комплексные предложения с разным уровнем
                                     функционала и сервисов. Все это позволит
                                     посетителю получить исчерпывающие сведения о компании или частном лице.</p>
@@ -132,7 +196,17 @@
                     <li class="card-list__item">
                         <a href="" class="card-list__link">
                             <div class="card-list__img">
-                                <img src="./images/img5.jpg" alt="изображены две коробки" width="370" height="294">
+                                <img srcset="
+                                                                                        ./images/card/354-card5.jpg 354w, 
+                                                                                        ./images/card/354-card5@2x.jpg 708w,
+                                                                                        ./images/card/370-card5.jpg 370w, 
+                                                                                        ./images/card/370-card5@2x.jpg 740w,
+                                                                                        ./images/card/450-card5.jpg 450w, 
+                                                                                        ./images/card/450-card5@2x.jpg 900w"
+                                    sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (max-width: 767px) 450px"
+                                    src="./images/card/354-card5.jpg" alt="изображены две коробки"
+                                    class="card-list__img--img">
+                                <!-- <img src="./images/img5.jpg" alt="изображены две коробки" width="370" height="294"> -->
                                 <p class="card-list__text">Ресурс предлагает комплексные предложения с разным уровнем
                                     функционала и сервисов. Все это позволит
                                     посетителю получить исчерпывающие сведения о компании или частном лице.</p>
@@ -147,7 +221,17 @@
                     <li class="card-list__item">
                         <a href="" class="card-list__link">
                             <div class="card-list__img">
-                                <img src="./images/img6.jpg" alt="монитор с веб страницей" width="370" height="294">
+                                <img srcset="
+                                                                                        ./images/card/354-card6.jpg 354w, 
+                                                                                        ./images/card/354-card6@2x.jpg 708w,
+                                                                                        ./images/card/370-card6.jpg 370w, 
+                                                                                        ./images/card/370-card6@2x.jpg 740w,
+                                                                                        ./images/card/450-card6.jpg 450w, 
+                                                                                        ./images/card/450-card6@2x.jpg 900w"
+                                    sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (max-width: 767px) 450px"
+                                    src="./images/card/354-card6.jpg" alt="монитор с веб страницей"
+                                    class="card-list__img--img">
+                                <!-- <img src="./images/img6.jpg" alt="монитор с веб страницей" width="370" height="294"> -->
                                 <p class="card-list__text">Ресурс предлагает комплексные предложения с разным уровнем
                                     функционала и сервисов. Все это позволит
                                     посетителю получить исчерпывающие сведения о компании или частном лице.</p>
@@ -162,7 +246,16 @@
                     <li class="card-list__item">
                         <a href="" class="card-list__link">
                             <div class="card-list__img">
-                                <img src="./images/img7.jpg" alt="журнал" width="370" height="294">
+                                <img srcset="
+                                                                                        ./images/card/354-card7.jpg 354w, 
+                                                                                        ./images/card/354-card7@2x.jpg 708w,
+                                                                                        ./images/card/370-card7.jpg 370w, 
+                                                                                        ./images/card/370-card7@2x.jpg 740w,
+                                                                                        ./images/card/450-card7.jpg 450w, 
+                                                                                        ./images/card/450-card7@2x.jpg 900w"
+                                    sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (max-width: 767px) 450px"
+                                    src="./images/card/354-card7.jpg" alt="журнал" class="card-list__img--img">
+                                <!-- <img src="./images/img7.jpg" alt="журнал" width="370" height="294"> -->
                                 <p class="card-list__text">Ресурс предлагает комплексные предложения с разным уровнем
                                     функционала и сервисов. Все это позволит
                                     посетителю получить исчерпывающие сведения о компании или частном лице.</p>
@@ -177,7 +270,16 @@
                     <li class="card-list__item">
                         <a href="" class="card-list__link">
                             <div class="card-list__img">
-                                <img src="./images/img8.jpg" alt="бирка проекта" width="370" height="294">
+                                <img srcset="
+                                                                                        ./images/card/354-card8.jpg 354w, 
+                                                                                        ./images/card/354-card8@2x.jpg 708w,
+                                                                                        ./images/card/370-card8.jpg 370w, 
+                                                                                        ./images/card/370-card8@2x.jpg 740w,
+                                                                                        ./images/card/450-card8.jpg 450w, 
+                                                                                        ./images/card/450-card8@2x.jpg 900w"
+                                    sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (max-width: 767px) 450px"
+                                    src="./images/card/354-card8.jpg" alt="бирка проекта" class="card-list__img--img">
+                                <!-- <img src="./images/img8.jpg" alt="бирка проекта" width="370" height="294"> -->
                                 <p class="card-list__text">Ресурс предлагает комплексные предложения с разным уровнем
                                     функционала и сервисов. Все это позволит
                                     посетителю получить исчерпывающие сведения о компании или частном лице.</p>
@@ -192,8 +294,18 @@
                     <li class="card-list__item">
                         <a href="" class="card-list__link">
                             <div class="card-list__img">
-                                <img src="./images/img9.jpg" alt="компьютер на мониторе которого приложение" width="370"
-                                    height="294">
+                                <img srcset="
+                                                                                        ./images/card/354-card9.jpg 354w, 
+                                                                                        ./images/card/354-card9@2x.jpg 708w,
+                                                                                        ./images/card/370-card9.jpg 370w, 
+                                                                                        ./images/card/370-card9@2x.jpg 740w,
+                                                                                        ./images/card/450-card9.jpg 450w, 
+                                                                                        ./images/card/450-card9@2x.jpg 900w"
+                                    sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (max-width: 767px) 450px"
+                                    src="./images/card/354-card9.jpg" alt="компьютер на мониторе которого приложение"
+                                    class="card-list__img--img">
+                                <!-- <img src="./images/img9.jpg" alt="компьютер на мониторе которого приложение" width="370"
+                                    height="294"> -->
                                 <p class="card-list__text">Ресурс предлагает комплексные предложения с разным уровнем
                                     функционала и сервисов. Все это позволит
                                     посетителю получить исчерпывающие сведения о компании или частном лице.</p>
@@ -213,54 +325,57 @@
     <!-- footer -->
     <footer class="footer">
         <div class="container footer__flex">
-            <div>
-                <a href="./index.html" class="logo footer__logo"><span class="logo__part">Web</span>Studio</a>
-                <address class="address">
-                    <ul class="address__list">
-                        <li class="address__item"><a href="https://goo.gl/maps/LCvyeXpGgoU2J2YH6" target="_blank"
-                                rel="noreferrer noopener" class="address__link address__link--start">г. Киев, пр-т Леси
-                                Украинки,
-                                26</a>
+            <div class="footer__oneblcok">
+                <div class="footer__addressandlogo">
+                    <a href="./index.html" class="logo footer__logo"><span class="logo__part">Web</span>Studio</a>
+                    <address class="address">
+                        <ul class="address__list">
+                            <li class="address__item"><a href="https://goo.gl/maps/LCvyeXpGgoU2J2YH6" target="_blank"
+                                    rel="noreferrer noopener" class="address__link address__link--start">г. Киев, пр-т
+                                    Леси
+                                    Украинки,
+                                    26</a>
+                            </li>
+                            <li class="address__item"><a href="mailto:info@example.com"
+                                    class="address__link">info@example.com</a></li>
+                            <li class="address__item"><a href="tel:+380991111111" class="address__link">+38 099 111 11
+                                    11</a></li>
+                        </ul>
+                    </address>
+                </div>
+                <div class="footer__join">
+                    <h3 class="footer__title">присоединяйтесь</h3>
+                    <ul class="soc-net">
+                        <li class="soc-net__item">
+                            <a href="" class="soc-net__link">
+                                <svg width="20" height="20" class="soc-net__icon">
+                                    <use href="./images/icons.svg#icon-instagram" />
+                                </svg>
+                            </a>
                         </li>
-                        <li class="address__item"><a href="mailto:info@example.com"
-                                class="address__link">info@example.com</a></li>
-                        <li class="address__item"><a href="tel:+380991111111" class="address__link">+38 099 111 11
-                                11</a></li>
+                        <li class="soc-net__item">
+                            <a href="" class="soc-net__link">
+                                <svg width="20" height="20" class="soc-net__icon">
+                                    <use href="./images/icons.svg#icon-twitter" />
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="soc-net__item">
+                            <a href="" class="soc-net__link">
+                                <svg width="20" height="20" class="soc-net__icon">
+                                    <use href="./images/icons.svg#icon-facebook" />
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="soc-net__item">
+                            <a href="" class="soc-net__link">
+                                <svg width="20" height="20" class="soc-net__icon">
+                                    <use href="./images/icons.svg#icon-linkedin" />
+                                </svg>
+                            </a>
+                        </li>
                     </ul>
-                </address>
-            </div>
-            <div class="footer__join">
-                <h3 class="footer__title">присоединяйтесь</h3>
-                <ul class="soc-net">
-                    <li class="soc-net__item">
-                        <a href="" class="soc-net__link">
-                            <svg width="20" height="20" class="soc-net__icon">
-                                <use href="./images/icons.svg#icon-instagram" />
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="soc-net__item">
-                        <a href="" class="soc-net__link">
-                            <svg width="20" height="20" class="soc-net__icon">
-                                <use href="./images/icons.svg#icon-twitter" />
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="soc-net__item">
-                        <a href="" class="soc-net__link">
-                            <svg width="20" height="20" class="soc-net__icon">
-                                <use href="./images/icons.svg#icon-facebook" />
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="soc-net__item">
-                        <a href="" class="soc-net__link">
-                            <svg width="20" height="20" class="soc-net__icon">
-                                <use href="./images/icons.svg#icon-linkedin" />
-                            </svg>
-                        </a>
-                    </li>
-                </ul>
+                </div>
             </div>
             <div class="subscribe">
                 <h3 class="footer__title">Подпишитесь на рассылку</h3>
@@ -275,6 +390,7 @@
             </div>
         </div>
     </footer>
+    <script src="./js/mobile-menu.js"></script>
 </body>
 
 </html>
