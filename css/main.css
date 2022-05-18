@@ -693,7 +693,14 @@ img {
   font-size: 14px;
   color: var(--title-color);
   line-height: 1.15;
+  text-align: center;
   text-transform: uppercase;
+}
+
+@media (min-width: 768px) {
+  .benefits__subtitle {
+    text-align: start;
+  }
 }
 
 .benefits__text {
@@ -904,11 +911,12 @@ img {
   line-height: 1.71;
   text-decoration: none;
   font-style: normal;
+  color: rgba(255, 255, 255, 0.6);
   transition: color var(--animation);
 }
 
 .address__link--start {
-  color: rgba(255, 255, 255, 0.6);
+  color: white;
 }
 
 .address__link:hover, .address__link:focus {

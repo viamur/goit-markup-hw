@@ -79,10 +79,11 @@
     text-decoration: none;
     font-style: normal;
 
+    color: rgba(255, 255, 255, 0.6);
     transition: color var(--animation);
   }
   &__link--start {
-    color: rgba(255, 255, 255, 0.6);
+    color: rgb(255, 255, 255);
   }
   &__link:hover,
   &__link:focus {

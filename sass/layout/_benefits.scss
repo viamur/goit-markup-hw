@@ -28,7 +28,11 @@
     font-size: 14px;
     color: var(--title-color);
     line-height: 1.15;
+    text-align: center;
     text-transform: uppercase;
+    @include mq(tab) {
+      text-align: start;
+    }
   }
   &__text {
     font-size: 14px;
