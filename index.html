@@ -13,7 +13,7 @@
         rel="stylesheet">
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="../../../Downloads/goit-markup-hw-05-main/css/styles.css">
 </head>
 
 <body>
@@ -24,7 +24,7 @@
                 <a href="./index.html" class="logo"><span>Web</span>Studio</a>
                 <ul class="site-nav list">
                     <li class="item"><a href="./index.html" class="link active">Студия</a></li>
-                    <li class="item"><a href="portfolio.html" class="link">Портфолио</a></li>
+                    <li class="item"><a href="../../../Downloads/goit-markup-hw-05-main/portfolio.html" class="link">Портфолио</a></li>
                     <li class="item"><a href="" class="link">Контакты </a></li>
                 </ul>
             </nav>
@@ -55,7 +55,7 @@
         <section class="section-hero">
             <div class="container">
                 <h1 class="title">Эффективные решения для вашего бизнеса</h1>
-                <button type="button" class="button">Заказать услугу</button>
+                <button type="button" class="button" data-modal-open>Заказать услугу</button>
             </div>
         </section>
 
@@ -115,9 +115,16 @@
             <div class="container">
                 <h2 class="title">Чем мы занимаемся</h2>
                 <ul class="list-two">
-                    <li><img src="images/box1.jpg" alt="коддинг" width="370" height="294"></li>
-                    <li><img src="images/box2.jpg" alt="дизайн мобильного приложение" width="370" height="294"></li>
-                    <li><img src="images/box3.jpg" alt="подбор палитры цветов" width="370" height="294"></li>
+                    <li class="item"><img src="../../../Downloads/goit-markup-hw-05-main/images/box1.jpg" alt="коддинг" width="370" height="294" class="img">
+                        <p class="text">Десктопные приложения</p>
+                    </li>
+                    <li class="item"><img src="../../../Downloads/goit-markup-hw-05-main/images/box2.jpg" alt="дизайн мобильного приложение" width="370"
+                                          height="294">
+                        <p class="text">Мобильные приложения</p>
+                    </li>
+                    <li class="item"><img src="../../../Downloads/goit-markup-hw-05-main/images/box3.jpg" alt="подбор палитры цветов" width="370" height="294">
+                        <p class="text">Дизайнерские решения</p>
+                    </li>
                 </ul>
             </div>
         </section>
@@ -128,7 +135,7 @@
                 <h1 class="title">Наша команада</h1>
                 <ul class="list">
                     <li class="comanda-li">
-                        <img src="images/staff1.jpg" alt="Игорь Демьяненко" width="270">
+                        <img src="../../../Downloads/goit-markup-hw-05-main/images/staff1.jpg" alt="Игорь Демьяненко" width="270">
                         <div class="comanda-bottom">
                             <h3 class="subtitle">Игорь Демьяненко</h3>
                             <p lang="en" class="text">Product Designer</p>
@@ -165,7 +172,7 @@
                         </div>
                     </li>
                     <li class="comanda-li">
-                        <img src="images/staff2.jpg" alt="Ольга Репина" width="270">
+                        <img src="../../../Downloads/goit-markup-hw-05-main/images/staff2.jpg" alt="Ольга Репина" width="270">
                         <div class="comanda-bottom">
                             <h3 class="subtitle">Ольга Репина</h3>
                             <p lang="en" class="text">Frontend Developer</p>
@@ -202,7 +209,7 @@
                         </div>
                     </li>
                     <li class="comanda-li">
-                        <img src="images/staff3.jpg" alt="Николай Тарасов" width="270">
+                        <img src="../../../Downloads/goit-markup-hw-05-main/images/staff3.jpg" alt="Николай Тарасов" width="270">
                         <div class="comanda-bottom">
                             <h3 class="subtitle">Николай Тарасов</h3>
                             <p lang="en" class="text">Marketing</p>
@@ -239,7 +246,7 @@
                         </div>
                     </li>
                     <li class="comanda-li">
-                        <img src="images/staff4.jpg" alt="Михаил Ермаков" width="270">
+                        <img src="../../../Downloads/goit-markup-hw-05-main/images/staff4.jpg" alt="Михаил Ермаков" width="270">
                         <div class="comanda-bottom">
                             <h3 class="subtitle">Михаил Ермаков</h3>
                             <p lang="en" class="text">UI Designer</p>
@@ -382,6 +389,14 @@
         </div>
     </footer>
 
+    <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+            <button type="button" class="modal-btn" data-modal-close><svg width="11" height="11" class="close-svg">
+                    <use href="./images/icons.svg#icon-close" />
+                </svg> </button>
+        </div>
+    </div>
+    <script src="../../../Downloads/goit-markup-hw-05-main/js/modal.js"></script>
 </body>
 
 </html>
