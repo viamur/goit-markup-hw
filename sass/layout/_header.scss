@@ -1,0 +1,39 @@
+.header {
+  border-bottom: 1px solid #ececec;
+
+  &__flex,
+  &__nav {
+    display: flex;
+    align-items: center;
+  }
+}
+/* Почта и номер телефона */
+.contacts {
+  display: flex;
+  margin-left: auto;
+
+  &__item:not(:last-child) {
+    margin-right: 50px;
+  }
+  &__icon {
+    fill: currentColor;
+    margin-right: 10px;
+  }
+  &__link {
+    display: flex;
+    align-items: center;
+
+    color: var(--text-color);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.15;
+    letter-spacing: 0.02em;
+
+    transition: color var(--animation);
+
+    &:hover,
+    &:focus {
+      color: var(--active-color);
+    }
+  }
+}

@@ -1,0 +1,38 @@
+/* БЛОК КЛИЕНТЫ */
+.client-list {
+  display: flex;
+  justify-content: center;
+
+  &__icon {
+    fill: currentColor;
+  }
+}
+.client-list__item {
+  width: 170px;
+  height: 92px;
+
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
+.client-list__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 100%;
+  height: 100%;
+
+  border: 1px solid var(--icon-color);
+  color: var(--icon-color);
+  border-radius: 4px;
+
+  transition: border-color var(--animation), color var(--animation);
+
+  &:hover,
+  &:focus {
+    color: var(--active-color);
+    border-color: var(--active-color);
+  }
+}

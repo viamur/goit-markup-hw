@@ -1,0 +1,120 @@
+.modal-form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+
+  &__label {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+  }
+  &__title {
+    margin-bottom: 4px;
+
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.01em;
+    color: var(--text-color);
+  }
+  &__block {
+    position: relative;
+  }
+  &__comment {
+    margin-bottom: 20px;
+  }
+  &__check {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+    margin-bottom: 30px;
+  }
+  &__text {
+    display: flex;
+
+    font-size: 14px;
+    line-height: 1.71;
+    color: var(--text-color);
+  }
+  &__link {
+    margin-left: 2pt;
+    text-decoration-line: underline;
+    color: var(--active-color);
+  }
+}
+
+.modal-form__input {
+  width: 100%;
+  height: 40px;
+  padding: 11px 12px 11px 42px;
+
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  outline: none;
+
+  transition: border-color var(--animation);
+
+  &:focus {
+    border-color: var(--active-color);
+  }
+}
+
+.modal-form__icon {
+  position: absolute;
+
+  top: 50%;
+  left: 12px;
+
+  transition: fill var(--animation);
+
+  transform: translateY(-50%);
+
+  .modal-form__input:focus + & {
+    fill: var(--active-color);
+  }
+}
+
+.modal-form__input--texterea {
+  width: 100%;
+  height: 120px;
+  padding: 12px 16px;
+
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+
+  outline: none;
+  resize: none;
+  transition: border-color var(--animation);
+
+  &:focus {
+    border-color: var(--active-color);
+  }
+  &::placeholder {
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.01em;
+    color: rgba(117, 117, 117, 0.5);
+  }
+}
+
+.modal-form__icon--box {
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  width: 16px;
+  height: 15px;
+  border-radius: 2px;
+
+  .modal-form__checkbox:checked + & {
+    fill: var(--active-color);
+    background-color: var(--active-color);
+  }
+}
+.modal-form__icon--check {
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  width: 16px;
+  height: 15px;
+}

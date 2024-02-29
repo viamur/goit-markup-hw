@@ -13,33 +13,34 @@
         rel="stylesheet">
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
-    <link rel="stylesheet" href="../../../Downloads/goit-markup-hw-06-main/css/styles.css">
+    <link rel="stylesheet" href="../../../Downloads/goit-markup-hw-07-main/css/main.min.css">
 </head>
 
 <body>
     <!-- Шапка -->
     <header class="header">
-        <div class="container header-flex">
-            <nav class="header-flex">
-                <a href="../../../Downloads/goit-markup-hw-06-main/index.html" class="logo"><span>Web</span>Studio</a>
-                <ul class="site-nav list">
-                    <li class="item"><a href="../../../Downloads/goit-markup-hw-06-main/index.html" class="link">Студия</a></li>
-                    <li class="item"><a href="./portfolio.html" class="link  active">Портфолио</a></li>
-                    <li class="item"><a href="" class="link">Контакты </a></li>
+        <div class="container header__flex">
+            <nav class="header__nav">
+                <a href="../../../Downloads/goit-markup-hw-07-main/index.html" class="logo"><span class="logo__part">Web</span>Studio</a>
+                <ul class="site-nav">
+                    <li class="site-nav__item"><a href="../../../Downloads/goit-markup-hw-07-main/index.html" class="site-nav__link">Студия</a></li>
+                    <li class="site-nav__item"><a href="./portfolio.html"
+                            class="site-nav__link  site-nav__link--active">Портфолио</a></li>
+                    <li class="site-nav__item"><a href="" class="site-nav__link">Контакты </a></li>
                 </ul>
             </nav>
-            <ul class="auth-nav list">
-                <li class="item">
-                    <a href="mailto:info@devstudio.com" class="link">
-                        <svg width="16" height="12" class="auth-svg">
+            <ul class="contacts">
+                <li class="contacts__item">
+                    <a href="mailto:info@devstudio.com" class="contacts__link">
+                        <svg width="16" height="12" class="contacts__icon">
                             <use href="./images/icons.svg#icon-mail" />
                         </svg>
                         info@devstudio.com
                     </a>
                 </li>
-                <li class="item">
-                    <a href="tel:+380961111111" class="link">
-                        <svg width="10" height="16" class="auth-svg">
+                <li class="contacts__item">
+                    <a href="tel:+380961111111" class="contacts__link">
+                        <svg width="10" height="16" class="contacts__icon">
                             <use href="./images/icons.svg#icon-phone" />
                         </svg>
                         +38 096 111 11 11
@@ -56,150 +57,151 @@
             <div class="container">
                 <!-- потом скроется заголовок -->
                 <h1 class="visually-hidden">Карточки портфолио</h1>
-                <ul class="list-button">
-                    <li><button type="button" class="btn">Все</button></li>
-                    <li><button type="button" class="btn">Веб-сайты</button></li>
-                    <li><button type="button" class="btn">Приложения</button></li>
-                    <li><button type="button" class="btn">Дизайн</button></li>
-                    <li><button type="button" class="btn">Маркетинг</button></li>
+                <ul class="filter-list">
+                    <li class="filter-list__item"><button type="button" class="filter-list__btn">Все</button></li>
+                    <li class="filter-list__item"><button type="button" class="filter-list__btn">Веб-сайты</button></li>
+                    <li class="filter-list__item"><button type="button" class="filter-list__btn">Приложения</button>
+                    </li>
+                    <li class="filter-list__item"><button type="button" class="filter-list__btn">Дизайн</button></li>
+                    <li class="filter-list__item"><button type="button" class="filter-list__btn">Маркетинг</button></li>
                 </ul>
                 <!-- Карточки портфолио -->
-                <ul class="list card">
-                    <li class="card-item">
-                        <a href="" class="card-link">
-                            <div class="card-hover">
-                                <img src="../../../Downloads/goit-markup-hw-06-main/images/img1.jpg" alt="экран монитора с веб-страницей" width="370"
+                <ul class="card-list">
+                    <li class="card-list__item">
+                        <a href="" class="card-list__link">
+                            <div class="card-list__img">
+                                <img src="../../../Downloads/goit-markup-hw-07-main/images/img1.jpg" alt="экран монитора с веб-страницей" width="370"
                                      height="294">
-                                <p class="card-text">Ресурс предлагает комплексные предложения с разным уровнем
+                                <p class="card-list__text">Ресурс предлагает комплексные предложения с разным уровнем
                                     функционала
                                     и
                                     сервисов. Все
                                     это позволит посетителю получить
                                     исчерпывающие сведения о компании или частном лице.</p>
                             </div>
-                            <div class="text">
-                                <h2>Технокряк</h2>
-                                <p>Веб-сайт</p>
+                            <div class="card-list__wrap">
+                                <h2 class="card-list__title">Технокряк</h2>
+                                <p class="card-list__subtitle">Веб-сайт</p>
                             </div>
                         </a>
                     </li>
-                    <li class="card-item">
-                        <a href="" class="card-link">
-                            <div class="card-hover">
-                                <img src="../../../Downloads/goit-markup-hw-06-main/images/img2.jpg" alt="постер с изображением двух баскетболистов" width="370"
+                    <li class="card-list__item">
+                        <a href="" class="card-list__link">
+                            <div class="card-list__img">
+                                <img src="../../../Downloads/goit-markup-hw-07-main/images/img2.jpg" alt="постер с изображением двух баскетболистов" width="370"
                                      height="294">
-                                <p class="card-text">Ресурс предлагает комплексные предложения с разным уровнем
+                                <p class="card-list__text">Ресурс предлагает комплексные предложения с разным уровнем
                                     функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения
                                     о компании или частном лице.</p>
                             </div>
-                            <div class="text">
-                                <h2>Постер New Orlean vs Golden Star</h2>
-                                <p>Дизайн</p>
+                            <div class="card-list__wrap">
+                                <h2 class="card-list__title">Постер New Orlean vs Golden Star</h2>
+                                <p class="card-list__subtitle">Дизайн</p>
                             </div>
                         </a>
                     </li>
-                    <li class="card-item">
-                        <a href="" class="card-link">
-                            <div class="card-hover">
-                                <img src="../../../Downloads/goit-markup-hw-06-main/images/img3.jpg" alt="логотип ресторана" width="370" height="294">
-                                <p class="card-text">Ресурс предлагает комплексные предложения с разным уровнем
+                    <li class="card-list__item">
+                        <a href="" class="card-list__link">
+                            <div class="card-list__img">
+                                <img src="../../../Downloads/goit-markup-hw-07-main/images/img3.jpg" alt="логотип ресторана" width="370" height="294">
+                                <p class="card-list__text">Ресурс предлагает комплексные предложения с разным уровнем
                                     функционала и сервисов. Все это позволит
                                     посетителю получить исчерпывающие сведения о компании или частном лице.</p>
                             </div>
-                            <div class="text">
-                                <h2>Ресторан Seafood</h2>
-                                <p>Приложение</p>
+                            <div class="card-list__wrap">
+                                <h2 class="card-list__title">Ресторан Seafood</h2>
+                                <p class="card-list__subtitle">Приложение</p>
                             </div>
                         </a>
                     </li>
-                    <li class="card-item">
-                        <a href="" class="card-link">
-                            <div class="card-hover">
-                                <img src="../../../Downloads/goit-markup-hw-06-main/images/img4.jpg" alt="наушники" width="370" height="294">
-                                <p class="card-text">Ресурс предлагает комплексные предложения с разным уровнем
-                                    функционала и сервисов. Все это позволит
-                                    посетителю получить исчерпывающие сведения о компании или частном лице.</p>
-
-                            </div>
-                            <div class="text">
-                                <h2>Проект Prime</h2>
-                                <p>Маркетинг</p>
-                            </div>
-                        </a>
-                    </li>
-                    <li class="card-item">
-                        <a href="" class="card-link">
-                            <div class="card-hover">
-                                <img src="../../../Downloads/goit-markup-hw-06-main/images/img5.jpg" alt="изображены две коробки" width="370" height="294">
-                                <p class="card-text">Ресурс предлагает комплексные предложения с разным уровнем
+                    <li class="card-list__item">
+                        <a href="" class="card-list__link">
+                            <div class="card-list__img">
+                                <img src="../../../Downloads/goit-markup-hw-07-main/images/img4.jpg" alt="наушники" width="370" height="294">
+                                <p class="card-list__text">Ресурс предлагает комплексные предложения с разным уровнем
                                     функционала и сервисов. Все это позволит
                                     посетителю получить исчерпывающие сведения о компании или частном лице.</p>
 
                             </div>
-                            <div class="text">
-                                <h2>Проект Boxes</h2>
-                                <p>Приложение</p>
+                            <div class="card-list__wrap">
+                                <h2 class="card-list__title">Проект Prime</h2>
+                                <p class="card-list__subtitle">Маркетинг</p>
                             </div>
                         </a>
                     </li>
-                    <li class="card-item">
-                        <a href="" class="card-link">
-                            <div class="card-hover">
-                                <img src="../../../Downloads/goit-markup-hw-06-main/images/img6.jpg" alt="монитор с веб страницей" width="370" height="294">
-                                <p class="card-text">Ресурс предлагает комплексные предложения с разным уровнем
+                    <li class="card-list__item">
+                        <a href="" class="card-list__link">
+                            <div class="card-list__img">
+                                <img src="../../../Downloads/goit-markup-hw-07-main/images/img5.jpg" alt="изображены две коробки" width="370" height="294">
+                                <p class="card-list__text">Ресурс предлагает комплексные предложения с разным уровнем
                                     функционала и сервисов. Все это позволит
                                     посетителю получить исчерпывающие сведения о компании или частном лице.</p>
 
                             </div>
-                            <div class="text">
-                                <h2>Inspiration has no Borders</h2>
-                                <p>Веб-сайт</p>
+                            <div class="card-list__wrap">
+                                <h2 class="card-list__title">Проект Boxes</h2>
+                                <p class="card-list__subtitle">Приложение</p>
                             </div>
                         </a>
                     </li>
-                    <li class="card-item">
-                        <a href="" class="card-link">
-                            <div class="card-hover">
-                                <img src="../../../Downloads/goit-markup-hw-06-main/images/img7.jpg" alt="журнал" width="370" height="294">
-                                <p class="card-text">Ресурс предлагает комплексные предложения с разным уровнем
+                    <li class="card-list__item">
+                        <a href="" class="card-list__link">
+                            <div class="card-list__img">
+                                <img src="../../../Downloads/goit-markup-hw-07-main/images/img6.jpg" alt="монитор с веб страницей" width="370" height="294">
+                                <p class="card-list__text">Ресурс предлагает комплексные предложения с разным уровнем
                                     функционала и сервисов. Все это позволит
                                     посетителю получить исчерпывающие сведения о компании или частном лице.</p>
 
                             </div>
-                            <div class="text">
-                                <h2>Издание Limited Edition</h2>
-                                <p>Дизайн</p>
+                            <div class="card-list__wrap">
+                                <h2 class="card-list__title">Inspiration has no Borders</h2>
+                                <p class="card-list__subtitle">Веб-сайт</p>
                             </div>
                         </a>
                     </li>
-                    <li class="card-item">
-                        <a href="" class="card-link">
-                            <div class="card-hover">
-                                <img src="../../../Downloads/goit-markup-hw-06-main/images/img8.jpg" alt="бирка проекта" width="370" height="294">
-                                <p class="card-text">Ресурс предлагает комплексные предложения с разным уровнем
+                    <li class="card-list__item">
+                        <a href="" class="card-list__link">
+                            <div class="card-list__img">
+                                <img src="../../../Downloads/goit-markup-hw-07-main/images/img7.jpg" alt="журнал" width="370" height="294">
+                                <p class="card-list__text">Ресурс предлагает комплексные предложения с разным уровнем
                                     функционала и сервисов. Все это позволит
                                     посетителю получить исчерпывающие сведения о компании или частном лице.</p>
 
                             </div>
-                            <div class="text">
-                                <h2>Проект LAB</h2>
-                                <p>Маркетинг</p>
+                            <div class="card-list__wrap">
+                                <h2 class="card-list__title">Издание Limited Edition</h2>
+                                <p class="card-list__subtitle">Дизайн</p>
                             </div>
                         </a>
                     </li>
-                    <li class="card-item">
-                        <a href="" class="card-link">
-                            <div class="card-hover">
-                                <img src="../../../Downloads/goit-markup-hw-06-main/images/img9.jpg" alt="компьютер на мониторе которого приложение" width="370"
+                    <li class="card-list__item">
+                        <a href="" class="card-list__link">
+                            <div class="card-list__img">
+                                <img src="../../../Downloads/goit-markup-hw-07-main/images/img8.jpg" alt="бирка проекта" width="370" height="294">
+                                <p class="card-list__text">Ресурс предлагает комплексные предложения с разным уровнем
+                                    функционала и сервисов. Все это позволит
+                                    посетителю получить исчерпывающие сведения о компании или частном лице.</p>
+
+                            </div>
+                            <div class="card-list__wrap">
+                                <h2 class="card-list__title">Проект LAB</h2>
+                                <p class="card-list__subtitle">Маркетинг</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="card-list__item">
+                        <a href="" class="card-list__link">
+                            <div class="card-list__img">
+                                <img src="../../../Downloads/goit-markup-hw-07-main/images/img9.jpg" alt="компьютер на мониторе которого приложение" width="370"
                                      height="294">
-                                <p class="card-text">Ресурс предлагает комплексные предложения с разным уровнем
+                                <p class="card-list__text">Ресурс предлагает комплексные предложения с разным уровнем
                                     функционала и сервисов. Все это позволит
                                     посетителю получить исчерпывающие сведения о компании или частном лице.</p>
 
                             </div>
-                            <div class="text">
-                                <h2>Growing Business</h2>
-                                <p>Приложение</p>
+                            <div class="card-list__wrap">
+                                <h2 class="card-list__title">Growing Business</h2>
+                                <p class="card-list__subtitle">Приложение</p>
                             </div>
                         </a>
                     </li>
@@ -210,59 +212,62 @@
 
     <!-- footer -->
     <footer class="footer">
-        <div class="container footer-div">
-            <div class="footer-one">
-                <a href="../../../Downloads/goit-markup-hw-06-main/index.html" class="logo"><span>Web</span>Studio</a>
-                <address>
-                    <ul class="list">
-                        <li><a href="https://goo.gl/maps/LCvyeXpGgoU2J2YH6" target="_blank" rel="noreferrer noopener"
-                                class="link-white">г. Киев, пр-т Леси Украинки,
+        <div class="container footer__flex">
+            <div>
+                <a href="../../../Downloads/goit-markup-hw-07-main/index.html" class="logo footer__logo"><span class="logo__part">Web</span>Studio</a>
+                <address class="address">
+                    <ul class="address__list">
+                        <li class="address__item"><a href="https://goo.gl/maps/LCvyeXpGgoU2J2YH6" target="_blank"
+                                rel="noreferrer noopener" class="address__link address__link--start">г. Киев, пр-т Леси
+                                Украинки,
                                 26</a>
                         </li>
-                        <li><a href="mailto:info@example.com" class="link-grey">info@example.com</a></li>
-                        <li><a href="tel:+380991111111" class="link-grey">+38 099 111 11 11</a></li>
+                        <li class="address__item"><a href="mailto:info@example.com"
+                                class="address__link">info@example.com</a></li>
+                        <li class="address__item"><a href="tel:+380991111111" class="address__link">+38 099 111 11
+                                11</a></li>
                     </ul>
                 </address>
             </div>
-            <div class="footer-two">
-                <h3 class="title">присоединяйтесь</h3>
-                <ul class="soc-list">
-                    <li class="soc-item">
-                        <a href="" class="soc-link">
-                            <svg width="20" height="20" class="soc-svg">
+            <div class="footer__join">
+                <h3 class="footer__title">присоединяйтесь</h3>
+                <ul class="soc-net">
+                    <li class="soc-net__item">
+                        <a href="" class="soc-net__link">
+                            <svg width="20" height="20" class="soc-net__icon">
                                 <use href="./images/icons.svg#icon-instagram" />
                             </svg>
                         </a>
                     </li>
-                    <li class="soc-item">
-                        <a href="" class="soc-link">
-                            <svg width="20" height="20" class="soc-svg">
+                    <li class="soc-net__item">
+                        <a href="" class="soc-net__link">
+                            <svg width="20" height="20" class="soc-net__icon">
                                 <use href="./images/icons.svg#icon-twitter" />
                             </svg>
                         </a>
                     </li>
-                    <li class="soc-item">
-                        <a href="" class="soc-link">
-                            <svg width="20" height="20" class="soc-svg">
+                    <li class="soc-net__item">
+                        <a href="" class="soc-net__link">
+                            <svg width="20" height="20" class="soc-net__icon">
                                 <use href="./images/icons.svg#icon-facebook" />
                             </svg>
                         </a>
                     </li>
-                    <li class="soc-item">
-                        <a href="" class="soc-link">
-                            <svg width="20" height="20" class="soc-svg">
+                    <li class="soc-net__item">
+                        <a href="" class="soc-net__link">
+                            <svg width="20" height="20" class="soc-net__icon">
                                 <use href="./images/icons.svg#icon-linkedin" />
                             </svg>
                         </a>
                     </li>
                 </ul>
             </div>
-            <div class="footer-three">
-                <h3 class="footer-three-title">Подпишитесь на рассылку</h3>
-                <form class="footer-form" name="footer_form">
-                    <input type="email" name="email" placeholder="E-mail" class="footer-input-email">
-                    <button type="submit" class="button footer-form-btn">Подписаться
-                        <svg width="24" height="24" class="footer-form-icon">
+            <div class="subscribe">
+                <h3 class="footer__title">Подпишитесь на рассылку</h3>
+                <form class="subscribe__form" name="footer_form">
+                    <input type="email" name="email" placeholder="E-mail" class="subscribe__input">
+                    <button type="submit" class="button subscribe__button">Подписаться
+                        <svg width="24" height="24" class="subscribe__icon">
                             <use href="./images/icons.svg#icon-send" />
                         </svg>
                     </button>
